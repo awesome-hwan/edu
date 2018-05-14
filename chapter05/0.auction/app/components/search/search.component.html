@@ -1,30 +1,20 @@
-<form [formGroup]="formModel">
+<form name="searchForm" role="form">
 	<div class="form-group">
-		<label for="title">Product title:</label>
-		<input id="title"
-		       placeholder="Title"
-		       class="form-control"
-		       type="text"
-		       formControlName="title">
+		<label for="productTitle">Product title :</label>
+		<input type="text" id="productTitle"
+		       placeholder="Title" class="form-control">
 	</div>
 	<div class="form-group">
-		<label for="price">Product price:</label>
-		<input id="price"
-		       placeholder="Price"
-		       class="form-control"
-		       type="number"
-		       step="any"
-		       min="0"
-		       formControlName="price">
+		<label for="productPrice">Product price :</label>
+		<input id="productPrice"
+		       name="productPrice"
+		       type="number" min="0" step="any"
+		       placeholder="Price" class="form-control">
 	</div>
 	<div class="form-group">
-		<label for="category">Product category:</label>
-		<select id="category"
-		        class="form-control"
-		        formControlName="category">
-		</select>
+		<label for="prodcutCategory">Product category :</label>
+		<select id="prodcutCategory" class="form-control"></select>
 	</div>
-
 	<div class="form-group">
 		<button type="submit" class="btn btn-primary btn-block">Search</button>
 	</div>
